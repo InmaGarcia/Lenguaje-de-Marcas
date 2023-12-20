@@ -1,0 +1,51 @@
+body{
+    background-color: #f39f9f;
+    margin:0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    padding: 10px;
+}
+nav {
+    background-color: #666;
+    justify-content: center;
+    padding: 10px;
+    display:flex;
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    margin:0 10px;
+    background-color: #123;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none; /*esto es para quitar el subrrayado*/
+}
+
+a:hover{
+     background-color: rgb(73, 97, 122);
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+article {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+footer p {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

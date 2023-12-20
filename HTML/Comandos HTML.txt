@@ -1,0 +1,204 @@
+<html>
+    <title>  pestaña  (cabecera de la pagina)
+    </title>
+    <head> pueden ir etiquetas style para etiquetas concretas del body   
+    </head>
+    <body>  esto es el cuerpo de la pagina web          
+    </body>
+</html> 
+         
+ comentarios <!--     --> 
+
+# Al poner una etiqueta seria
+<nombre_etiqueta(puede ir un atributo con un valor)> Elemento </nombre_etiqueta>
+
+Para escribir un texto podemos hacerlo de varias formar una de ellas es
+<p></p>
+
+<div></div> -es una etiqueta que se suele usar como bloque. Agrupa un conjunto de cosas.(capas) 
+Podemos tener cajas anidadas, se usa sobre todo para teneer estilos o cosas conquetas en un sitio
+y despues otras en otro lado con otro estilo.
+
+<span></span> -cuando quieres diferenciar en estilo un texto determinado
+
+<br></br>   -hace salto lineas
+
+<hr/>    -pone una barra de lado a lado de la pagina. Podemos darle caracteristicas.
+
+<h1> MAYOR    <h6> MENOR
+
+<a href=""> nos redirige a una página. Puede ser externa o de nuestro propio directorio
+
+
+Atributos
+style=
+align=  -donde va alineado
+width:  -tamaño ancho
+heigth: -tamaño altura
+margin: -una forma de centrar una capa respecto al padre, es decir debes tener un div padre(display:grid)
+ej:
+   <div 
+       style="
+        width: 500px; 
+        height: 500px;
+        background-color: silver; 
+        margin: auto;     
+      "
+    >
+target=  - nos dice si se abre la pagina del enlace en otra pagina aparte o nos cambia la actual. Black (nos abre otra pestaña),
+si no ponemos nada se pone por defecto que cambie nuestra pagina actual.
+
+
+LISTA
+
+  -lISTA NO ORDENADA, pone un punto negro delante(por defecto). 
+El punto se puede cambiar (type="circle" or "square") tambien con (style="list-style-type: square;")
+
+<ul>  empezamos un listado no ordenado
+<li>  es para cada elemento de la lista
+
+<ul type="circle">
+       <li>Elemento 1</li>
+       <li>Elemento 2</li>
+       <li>Elemento 3</li>
+</ul> 
+
+  -LISTA ORDENADA,  pone un numero delante por defecto
+Para que empiece donde queramos start=
+atributo reversed es para que vaya hacia atras 4321
+type= a, para que sean letras, luego debo decirle desde donde empieza
+type= i, para numeros romanos
+
+<ol> empezamos lista odenada
+<li> cada elemento
+
+<ol type="a" start="4">
+      <li>Programación</li>
+      <li>Entorno</li>
+      <li>Lenguaje de Marcas</li>
+</ol>
+
+   -LISTA DE DEFINICIONES,
+
+<dl>   empezamos la lista
+<dt>   Elemento
+<dd>   definicion
+
+<dl>
+   <dl>Automóvil</dl>
+       <dd>Vehículo de cuatro ruedas con motor</dd>
+   <dl>Motocicleta</dl>
+       <dd>Vehícula de dos ruedas con motor</dd>
+   <dl>Bicicleta</dl>
+       <dd>Vehículo de dos ruedas sin motor</dd>
+</dl>
+
+
+TABLAS
+Se combinan tres eqtiquetas. Inicio de tabla, inicio de fila y columna.
+borde="1", linea por fila y otra linea por columna
+bgcolor=silver;  para aplicar color de fondo, puede ir en toda la tabla, en solo una fila o columna
+o en una celda.
+cellspacing=x; espacio entre columnas
+cellpadding=x; espacio que hay entre el titulo y el borde de la celda
+aling; alinear el texto
+valing; te lo alinea en vertical, es decir, en altura. TOP, MIDDLE, BOTTOM
+colspan=x;    une x columnas
+rowspan=x;    una x filas
+
+
+<table> apertura
+<tr> fila
+<td> columna
+<th>  cabecera de la tabla se pondria al principio del todo. Pone el texto en negrito
+<thead> una cabecera de la tabla, por defecto sale mas oscurito, mas nivel de toda la final y lo coje google
+<tbody> resto de datos
+<tfoot> pie de la tabla
+Podemos hacer un style en el head
+
+
+DISTINTOS ESTILOS POR LOS QUE PASA UN ENLACE
+Cambiar de color comforme mantenemos el cursor encima o entramos en la pagina
+a:hover   mantenemos el cursor encima
+a:visited     visitamos el enlace
+a:link  se le pone el color a la etiqueta 'a' del enlace
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href ="css/tabla.css"> // lo ponemos en head para llamar nuestro css
+
+
+<b></b>   negrita
+<i></i>   cursiva
+</u>   subrayar
+
+<FONT COLOR ="#D01B07">  </FONT>   darle color a las letras buscamos el color
+y ponemos el codigo HEX (#ee86f7)
+<body style="background-color:#15B4D6">   darle color al fondo de la pagina
+
+poner una foto
+<img src="enlace foto"width="anchura"height="altura"align="ubicacion"/>
+
+pinchar sobre la foto y que te lleve al enlace
+<a href="enlace foto">
+
+
+
+____________listas
+Tag	Description
+<ul>	Defines an unordered list
+<ol>	Defines an ordered list
+<li>	Define la line de la lista
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+<dd>	Describes the term in a description list
+
+_____lista desordenada
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+_____lista ordenada
+<ol>
+  <li></li>
+  <li></li>
+  <li></li>
+</ol>
+
+_____lista de instrucciones
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+
+_______Tablas. esta tiene borde doble y si le pones un 2 la linea de fuera se pone negrita
+  <table border : "1">
+tr me dice la fila
+td la columna
+            <tr> 
+              <td>NOMBRE </td>
+              <td>APELLIDO</td>
+            </tr>
+            <tr>
+               <td>Inma</td>
+               <td>García</td>
+            </tr>
+          </table>
+
+      
